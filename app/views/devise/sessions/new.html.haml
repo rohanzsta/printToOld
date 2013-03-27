@@ -1,0 +1,13 @@
+= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: 'form-signin'}) do |f|
+
+  %h2.form-signin-heading Sign in
+
+  = f.input :email, placeholder: "Email"
+  = f.input :password
+  = f.input :remember_me, as: :boolean
+
+  %div
+    = f.submit "Sign in", class: "btn btn-primary"
+
+  %hr
+  = render "devise/shared/links"
