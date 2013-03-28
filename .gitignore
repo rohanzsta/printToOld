@@ -21,4 +21,4 @@ doc/
 .idea
 
 #Ignore Paperclip uploaded files
-/punlic/system
+/public/system
