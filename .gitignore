@@ -20,5 +20,10 @@ doc/
 .DS_Store
 .idea
 
+<<<<<<< HEAD
 # Ignore Paperclip uploaded files
 /public/system
+=======
+#Ignore Paperclip uploaded files
+/punlic/system
+>>>>>>> d2b28f304e9a88a9eeef15a0adc36d25039045e6
