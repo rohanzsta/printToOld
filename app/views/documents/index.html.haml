@@ -1,0 +1,14 @@
+%h1 Listing documents
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Title
+      %th
+      %th
+      %th
+  %tbody
+    = render @documents
+%br
+
+= link_to 'New Document', new_document_path

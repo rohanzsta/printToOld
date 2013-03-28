@@ -1,0 +1,9 @@
+.row
+  .span6
+    .well
+      %p
+        = @document.title
+
+      = link_to 'Edit', edit_document_path(@document)
+      \|
+      = link_to 'Back', documents_path

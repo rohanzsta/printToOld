@@ -1,4 +1,6 @@
 PrintToOld::Application.routes.draw do
+  resources :documents
+
   devise_for :users
 
   get 'about' => 'pages#about'
