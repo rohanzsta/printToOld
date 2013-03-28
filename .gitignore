@@ -25,5 +25,9 @@ doc/
 /public/system
 =======
 #Ignore Paperclip uploaded files
+<<<<<<< HEAD
 /punlic/system
 >>>>>>> d2b28f304e9a88a9eeef15a0adc36d25039045e6
+=======
+/public/system
+>>>>>>> 2e173e5644862afcb4acdae24c7941284a96ef0d
