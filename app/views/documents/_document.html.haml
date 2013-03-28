@@ -1,4 +1,5 @@
 %tr
+  %td= image_tag document.image(:medium)
   %td= document.title
   %td= link_to 'Show', document
   - if current_user == document.user
