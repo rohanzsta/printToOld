@@ -7,3 +7,12 @@
   - if current_user == document.user
     %td= link_to 'Edit', edit_document_path(document)
     %td= link_to 'Destroy', document, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+/ .box
+/   %embed{:src => document.image(:medium)}
+/   / = image_tag document.image(:medium)
+/   = document.title
+/   = link_to 'Show', document
+/   - if current_user == document.user
+/     = link_to 'Edit', edit_document_path(document)
+/     = link_to 'Destroy', document, :method => :delete, :data => { :confirm => 'Are you sure?' }

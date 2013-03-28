@@ -5,7 +5,7 @@ class DocumentsController < ApplicationController
   # GET /documents.json
   def index
     # @documents = Document.all
-    @documents = current_user.documents.all
+    @documents = current_user.documents.order("created_at desc")
 
     respond_to do |format|
       format.html # index.html.erb
