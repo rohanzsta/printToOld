@@ -1,25 +1,25 @@
 .jumbotron
-	- if user_signed_in?
-		%h1 Upload your document.
-	- else
-		%h1 Your documents looking epic.
-	%p.lead
-		Got your diploma but it doesn't look that cool? Got headhunted and you want to frame the email but plain paper won't express it's epicness?
-	%a.btn.btn-large.btn-success Age your document
+  - if user_signed_in?
+    %h1 Upload your document.
+  - else
+    %h1 Your documents looking epic.
+  %p.lead
+    Got your diploma but it doesn't look that cool? Got headhunted and you want to frame the email but plain paper won't express it's epicness?
+  = link_to "Age your document", new_document_path(@document), class: "btn btn-large btn-success"
 %hr
 .row-fluid.marketing
-	.span6
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-	.span6
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-		%h4 Subheading
-		%p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+  .span6
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+  .span6
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+    %h4 Subheading
+    %p Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
 %hr

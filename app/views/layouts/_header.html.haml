@@ -1,8 +1,8 @@
 .masthead
   %ul.nav.nav-pills.pull-right
-    %li.active
-      = link_to "About", about_path
     - if user_signed_in?
+      %li.active
+        = link_to "Documents", "documents#index"
       %li= link_to "Account", edit_user_registration_path
       %li= link_to "Logout", destroy_user_session_path, method: :delete
     - else
