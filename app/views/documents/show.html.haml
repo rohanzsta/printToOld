@@ -3,7 +3,8 @@
     .well
       %p
         = @document.title
+      %p
+        = @document.user.name
 
-      = link_to 'Edit', edit_document_path(@document)
-      \|
-      = link_to 'Back', documents_path
+      - if current_user == @document.user
+        #{link_to 'Edit', edit_document_path(@document)} | #{link_to 'Back', documents_path}
