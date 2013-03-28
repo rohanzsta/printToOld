@@ -1,11 +1,7 @@
 %tr
-<<<<<<< HEAD
   %td
     %embed{:src => document.image(:medium)}
     / = image_tag document.image(:medium)
-=======
-  %td= image_tag document.image(:medium)
->>>>>>> d2b28f304e9a88a9eeef15a0adc36d25039045e6
   %td= document.title
   %td= link_to 'Show', document
   - if current_user == document.user

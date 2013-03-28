@@ -83,16 +83,4 @@ class DocumentsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  #Check file type
-  def pdf?(data)
-    return data[0,4]=="\%PDF"
-  end
-
-  def file_is_image?(file_name)
-    f = File.open(filename,'rb')  # rb means to read using binary
-    data = f.read(9)              # magic numbers are up to 9 bytes
-    f.close
-    return pdf(data)
-  end
 end
